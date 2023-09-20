@@ -5,10 +5,10 @@
  * @b: integer to swap
  *
  */
-void swap_int(int *a, int *b);
+void swap_int(int *a, int *b)
 {
-	int z;
-	z = *a;
-	*a = *b;
-	*b = z;
+int z;
+z = *a;
+*a = *b;
+*b = z;
 }
