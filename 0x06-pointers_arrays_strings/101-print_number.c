@@ -1,12 +1,26 @@
-/**
- * set_string - function that sets the value of a pointer to a char.
- * @s: source for copy
- * @to: string to copy to.
- *
- * Return: nothing
- */
-void set_string(char **s, char *to)
-{
-*s = to;
-}
+#include "main.h"
 
+/**
+ * print_number - print numbers chars
+ * @n: integer params
+ * Return: 0
+ */
+
+void print_number(int n)
+{
+	unsigned int n1;
+
+	n1 = n;
+
+	if (n < 0)
+	{
+		_putchar('-');
+		n1 = -n;
+	}
+
+	if (n1 / 10 != 0)
+	{
+		print_number(n1 / 10);
+	}
+	_putchar((n1 % 10) + '0');
+}
