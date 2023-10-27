@@ -9,13 +9,13 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-unsigned long int maxi = 0x01;
+unsigned long int max = 0x01;
 
-maxi <<= index;
-if (maxi == 0)
+max <<= index;
+if (max == 0)
 return (-1);
 
-if ((n & maxi))
+if ((n & max))
 return (1);
 else
 return (0);
